@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+input {
+  margin: 10px;
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+
+button {
+  width: 100px;
+  height: 40px;
+}
+
+
+ul {
+  display: grid;
+  place-items: center;
+}
+
+li {
+  list-style-type: none;
+  width: 300px;
+  height: 40px;
+  background-color: #263d31;
+  margin: 10px;
+  padding-top: 20px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 23px;
+  border-radius: 20px;
+}
+
+#task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+body {
+  background-color: #fd771d;
+  font-family: Poppins, sans-serif;    ;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+h1 {
+   font-size: 3rem;
+   color: #fff;
+}
+input {
+   width: 35rem;
+   height: 2.5rem;
+   border-radius: 0.5rem;
+   border: none;
+   font-size: 16px;
+}
+.add {
+   border: none;
+   border-radius: 0.5rem;
+   padding: 6px 16px;
+   color: #fff;
+   font-size: 16px;
+   background-color: forestgreen;
+}
+.add:hover {
+   background-color: rgb(41, 184, 41);
+}
+.delete {
+   border: none;
+   color: #fff;
+   border-radius: 0.5rem;
+   font-size: 16px;
+   padding: 6px 16px;
+   background-color: red;
+}
+.delete:hover {
+   background-color: rgb(243, 71, 71);
+}
+.taskHolder {
+   margin-top: 2rem;
+}
+.taskHolder span {
+   font-size: 16px;
+}
+
+.task-div {
+   /* width: 18rem; */
+   height: 1.8rem;
+   border-radius: 0.5rem;
+   border: none;
+   padding: 0.5rem 4rem;
+   background-color: #fff;
+   text-align: center;
+   margin-bottom: 1rem;
+}
+
+.task-div .task-para {
+   font-size: 1.5rem;
+   padding: 0 8rem 0 0;
+}
+.task-div .edit-button {
+   border: none;
+   padding: 4px 14px;
+   margin-right: 1.5rem;
+   background-color: rgb(194, 16, 238);
+   border-radius: 0.5rem;
+   font-size: 16px;
+
+}
+.task-div .delete-button {
+   font-size: 16px;
+   padding: 4px 14px;
+   background-color: red;
+   border-radius: 0.5rem;
+
+}
+
+@media screen and (max-width: 451px) {
+   
+   input {
+       width: 100%;
+       margin-bottom: 0.5rem;
+
+   }
+   .add {
+       display: block;
+       margin-left: 4rem;
+       margin-bottom: 0.5rem;
+   }
+   .delete {
+       margin-left: 2.7rem;
+       margin-bottom: 0.5rem;
+       display: block;
+       margin-top: 0.5rem;
+   }
+  
+   .task-div .task-para {
+       padding: 0;
+       margin-left: 0;
+       margin-right: 4rem;
+       margin-bottom: 0.5rem;
+   }
+   .task-div .edit-button {
+       margin: 0;
+   }
+   .task-div {
+       display: flex;
+       gap: 4px;
+   }
+}
